@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    border: 2px solid gainsboro;
+    width: 800px;
+    height: 440px;
+    margin: 50px;
+}
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    width: 700px;
+    height: 320px;
+    padding: 25px;
+    margin: 40px;
+}
+hr{
+    color: hsl(240, 5%, 91%);
+    width:100%;
+    margin: auto;
+}
+.logo{
+    margin-right: 100px;
+    position: relative;
+}
+.pattern{
+    position:absolute;
+    top: -10%;
+    left: 0;
+    bottom: 0;
+
+}
+.woman{
+    position: absolute;
+    top: 1.5%;
+    left: 0;
+    right: 0%;
+
+}
+.box{
+     position:absolute;
+     top: 22%;
+     left: 0;
+     bottom: 1%;
+}
+.faq{
+    width:auto;
+    margin-left: 250px;
+    
+}
+h2, p{
+    font-size: 12px;
+   
+}
+h1{
+    padding: 10px 5px;
+    margin-left: 60px;
+}
+.faq-question{
+    color: #444;
+    cursor: pointer;
+    padding: 15px 0 5px 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faqanswer{
+    margin: auto;
+    /* text-align: center; */
+    width:80%;
+    padding: auto;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-question:hover {
+    background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faqanswer {
+   /* padding: 0 18px;*/
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-question:after {
+    content: '\25B2';
+    /* Unicode character for "plus" sign (>) */
+    font-size: 12px;
+    color: #777;
+    float: right;
+    margin-left: 15px;
+}
+.active:after {
+    content: "\25BC";
+}
+
+
+
+@media only screen and (max-width:768px) and (min-width:400px){
+    .wrapper{
+        width: 350px;
+        height: 500px;
+        margin: 15px;
+        margin-left: 5px;
+    }
+    .container{
+        
+        display: grid;
+        grid-template: 1fr / 1fr ;
+        place-items: center;
+        border-radius: 20px;
+        width: 280px;
+        height: 400px;
+        padding: 10px;
+        margin-top: 80px;
+        margin-bottom: 5px;
+        position:relative;
+           
+    }
+    .logo{
+        margin-right: 160px;
+        margin-left: 10px;
+        position: absolute;
+        margin-bottom: 150px;
+        top:-13%
+    }
+    .pattern{
+        position:absolute;
+        top: 1;
+        left: 0;
+        width: 158px;
+        height: 110px
+    
+    }
+    .woman{
+        position: absolute;
+        top: -22%;
+        left: 0;
+        right: 0%;
+        bottom: 22%;
+        width: 140px;
+        height: 90px
+    
+    }
+    .box{
+        display: none;
+    }
+    .faq{
+        width:90%;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        padding: 20px 0 2px 0;
+    }
+    .faq-question{
+        width: 100%;
+        margin: 2px;
+    }
+    
+}
